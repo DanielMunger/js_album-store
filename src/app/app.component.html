@@ -1,0 +1,26 @@
+<md-sidenav-layout [class.m2app-dark]="isDarkTheme">
+
+  <md-sidenav #sidenav mode="side" class="app-sidenav">
+    Sidenav
+  </md-sidenav>
+
+  <md-toolbar color="primary">
+    <button class="app-icon-button" >
+      <i class="material-icons app-toolbar-menu">menu</i>
+    </button>
+
+      <span routerLink="">Angular Material2 Example App</span>
+
+
+    <span class="app-toolbar-filler"></span>
+    <button md-button routerLink="about">About</button>
+    <button md-button routerLink="marketplace">Marketplace</button>
+  </md-toolbar>
+
+
+<div class="container">
+  <h1>
+    {{title}}
+  </h1>
+  <router-outlet></router-outlet>
+</div>
